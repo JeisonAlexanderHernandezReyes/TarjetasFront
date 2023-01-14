@@ -156,7 +156,7 @@ const PaymentForms = () => {
   const sendData = async (data) => {
     try {
       await axios.post(
-        "http://localhost:3001/api/customerCard",
+        "https://oyster-app-obrst.ondigitalocean.app/api/customerCard" || "http://localhost:3001/api/customerCard",
         {
           cardNumber: data.cardNumber,
           placeHolderName: data.placeHolderName,
